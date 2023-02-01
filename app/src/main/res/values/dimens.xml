@@ -3,7 +3,7 @@
     <dimen name="space_mini_20">2dp</dimen>
     <dimen name="space_mini_40">4dp</dimen>
     <dimen name="space_mini_60">6dp</dimen>
-    <dimen name="space_mini_80">6dp</dimen>
+    <dimen name="space_mini_80">8dp</dimen>
     <dimen name="space_mini_100">10dp</dimen>
     <dimen name="space_mini_120">12dp</dimen>
     <dimen name="space_mini_140">14dp</dimen>

@@ -1,6 +1,8 @@
 package edu.unikom.restoranku.feature.order.presentation
 
 import android.os.Bundle
+import android.text.InputFilter
+import android.text.InputFilter.AllCaps
 import android.view.LayoutInflater
 import android.view.View
 import androidx.activity.OnBackPressedCallback
@@ -9,6 +11,7 @@ import androidx.viewbinding.ViewBinding
 import edu.unikom.restoranku.databinding.FragmentOrderFormBinding
 import edu.unikom.restoranku.module.DateUtility
 import edu.unikom.restoranku.module.ViewBindingFragment
+
 
 class OrderFormViewBindingFragment : ViewBindingFragment<FragmentOrderFormBinding>() {
     override val bindingInflater: (LayoutInflater) -> ViewBinding =
@@ -47,5 +50,7 @@ class OrderFormViewBindingFragment : ViewBindingFragment<FragmentOrderFormBindin
         binding.txtFieldHour.setOnClickListener {
             timePickerDialog.show()
         }
+
+        binding.txtFieldCodeMenu.filters = arrayOf<InputFilter>(AllCaps())
     }
 }

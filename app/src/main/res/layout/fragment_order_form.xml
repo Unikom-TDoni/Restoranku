@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey"
     tools:context=".feature.order.presentation.OrderFormViewBindingFragment">
 
     <androidx.constraintlayout.widget.Guideline
@@ -40,72 +41,108 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/txt_field_date"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_input_layout_date"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:hint="@string/txt_field_date_hint"
+        android:layout_marginTop="@dimen/space_normal_150"
+        android:layout_marginEnd="@dimen/space_mini_100"
+        android:minHeight="@dimen/space_large_150"
+        app:layout_constraintEnd_toStartOf="@id/txt_input_layout_hour"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_field_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:hint="@string/txt_field_date_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_input_layout_hour"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_mini_100"
         android:minHeight="@dimen/space_large_150"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/guideline_start"
-        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+        app:layout_constraintStart_toEndOf="@id/txt_input_layout_date"
+        app:layout_constraintTop_toTopOf="@id/txt_input_layout_date">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/txt_field_hour"
-        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_field_hour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:hint="@string/txt_field_hour_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_input_layout_table_code"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_mini_120"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:hint="@string/txt_field_hour_hint"
-        android:inputType="time"
         android:minHeight="@dimen/space_large_150"
-        app:layout_constraintEnd_toEndOf="@id/txt_field_date"
-        app:layout_constraintStart_toStartOf="@id/txt_field_date"
-        app:layout_constraintTop_toBottomOf="@id/txt_field_date" />
+        app:layout_constraintEnd_toEndOf="@id/txt_input_layout_hour"
+        app:layout_constraintStart_toStartOf="@id/txt_input_layout_date"
+        app:layout_constraintTop_toBottomOf="@id/txt_input_layout_date">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/txt_field_code_table"
-        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_field_code_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/txt_field_code_table_hint"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_input_layout_menu_code"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_mini_120"
-        android:hint="@string/txt_field_code_table_hint"
-        android:inputType="number"
         android:minHeight="@dimen/space_large_150"
-        app:layout_constraintEnd_toEndOf="@id/txt_field_date"
-        app:layout_constraintStart_toStartOf="@id/txt_field_date"
-        app:layout_constraintTop_toBottomOf="@id/txt_field_hour" />
+        app:layout_constraintEnd_toEndOf="@id/txt_input_layout_table_code"
+        app:layout_constraintStart_toStartOf="@id/txt_input_layout_table_code"
+        app:layout_constraintTop_toBottomOf="@id/txt_input_layout_table_code">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/txt_field_code_menu"
-        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_field_code_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/txt_field_code_menu_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_input_layout_price"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_mini_120"
-        android:hint="@string/txt_field_code_menu_hint"
         android:minHeight="@dimen/space_large_150"
-        app:layout_constraintEnd_toEndOf="@id/txt_field_date"
-        app:layout_constraintStart_toStartOf="@id/txt_field_date"
-        app:layout_constraintTop_toBottomOf="@id/txt_field_code_table" />
+        app:layout_constraintEnd_toEndOf="@id/txt_input_layout_table_code"
+        app:layout_constraintStart_toStartOf="@id/txt_input_layout_table_code"
+        app:layout_constraintTop_toBottomOf="@id/txt_input_layout_menu_code"
+        app:prefixText="Rp.">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/txt_field_price"
-        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space_mini_120"
-        android:hint="@string/txt_field_price_hint"
-        android:inputType="number"
-        android:minHeight="@dimen/space_large_150"
-        app:layout_constraintEnd_toEndOf="@id/txt_field_date"
-        app:layout_constraintStart_toStartOf="@id/txt_field_date"
-        app:layout_constraintTop_toBottomOf="@id/txt_field_code_menu" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_field_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/txt_field_price_hint"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_process"
@@ -114,9 +151,10 @@
         android:layout_marginBottom="@dimen/space_normal_100"
         android:backgroundTint="@color/coral_pink"
         android:hint="@string/btn_process_hint"
+        android:minHeight="@dimen/space_large_187.5"
         android:textColorHint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/txt_field_date"
-        app:layout_constraintStart_toStartOf="@id/txt_field_date" />
+        app:layout_constraintEnd_toEndOf="@id/txt_input_layout_table_code"
+        app:layout_constraintStart_toStartOf="@id/txt_input_layout_table_code" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

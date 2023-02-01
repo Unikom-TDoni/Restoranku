@@ -47,13 +47,25 @@
             style="@style/TextAppearance.Material3.HeadlineSmall"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/space_mini_80"
-            android:layout_marginTop="@dimen/space_mini_80"
-            android:layout_marginEnd="@dimen/space_mini_80"
+            android:layout_marginStart="@dimen/space_mini_120"
+            android:layout_marginTop="@dimen/space_mini_120"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/txt_view_price"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/img_view_menu" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_view_price"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_mini_120"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/txt_view_name"
+            app:layout_constraintDimensionRatio="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_view_name"
+            app:layout_constraintTop_toTopOf="@id/txt_view_name" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/txt_view_desc"
@@ -61,21 +73,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_mini_80"
-            app:layout_constraintEnd_toEndOf="@id/txt_view_name"
+            android:layout_marginBottom="@dimen/space_normal_125"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/txt_view_price"
             app:layout_constraintStart_toStartOf="@id/txt_view_name"
             app:layout_constraintTop_toBottomOf="@id/txt_view_name" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/txt_view_price"
-            style="@style/TextAppearance.Material3.BodyMedium"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/space_mini_80"
-            android:layout_marginBottom="@dimen/space_mini_100"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/txt_view_name"
-            app:layout_constraintStart_toStartOf="@id/txt_view_name"
-            app:layout_constraintTop_toBottomOf="@id/txt_view_desc" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

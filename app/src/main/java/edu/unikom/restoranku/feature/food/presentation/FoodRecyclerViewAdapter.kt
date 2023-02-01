@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import edu.unikom.restoranku.databinding.ItemFoodListBinding
 import edu.unikom.restoranku.feature.food.domain.Food
+import java.text.DecimalFormat
 
 class FoodRecyclerViewAdapter(
     private val data: List<Food>
@@ -34,7 +35,7 @@ class FoodRecyclerViewAdapter(
         binding.txtViewName.text = currentData.name
         binding.txtViewDesc.text = currentData.desc
         Glide.with(binding.imgViewMenu).load(currentData.image).into(binding.imgViewMenu)
-        binding.txtViewPrice.text = "Rp.${currentData.price}"
+        binding.txtViewPrice.text = "Rp.${DecimalFormat("#,###.##").format(currentData.price)}"
         binding.txtViewCategory.text = currentData.category.toString()
     }
 }
