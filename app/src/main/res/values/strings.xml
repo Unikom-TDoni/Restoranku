@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Restoranku</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    
+    <string name="txt_field_date_hint">Choose Date</string>
+    <string name="txt_field_hour_hint">Choose Hour</string>
+    <string name="txt_field_price_hint">Price</string>
+    <string name="txt_field_code_table_hint">No Meja</string>
+    <string name="txt_field_code_menu_hint">Menu Code</string>
+
+    <string name="btn_process_hint">Process</string>
+
+    <string name="heading_order">Order</string>
+    <string name="content_desc_button">FloatingButton</string>
+    <string name="menu">Menu</string>
+</resources>

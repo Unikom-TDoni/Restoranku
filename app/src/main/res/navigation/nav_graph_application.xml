@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_application"
+    app:startDestination="@id/foodMenuViewBindingFragment">
+
+    <fragment
+        android:id="@+id/foodMenuViewBindingFragment"
+        android:name="edu.unikom.restoranku.feature.food.presentation.FoodMenuViewBindingFragment"
+        android:label="fragment_food_menu"
+        tools:layout="@layout/fragment_food_menu" >
+        <action
+            android:id="@+id/action_foodMenuViewBindingFragment_to_orderFormViewBindingFragment"
+            app:destination="@id/orderFormViewBindingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFormViewBindingFragment"
+        android:name="edu.unikom.restoranku.feature.order.presentation.OrderFormViewBindingFragment"
+        android:label="fragment_order_form"
+        tools:layout="@layout/fragment_order_form" />
+</navigation>
