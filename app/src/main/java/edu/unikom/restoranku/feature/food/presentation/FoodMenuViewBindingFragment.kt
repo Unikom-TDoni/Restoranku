@@ -62,7 +62,7 @@ class FoodMenuViewBindingFragment : ViewBindingFragment<FragmentFoodMenuBinding>
             Food(
                 "F01",
                 "Batagor",
-                R.drawable.img_cappuccino,
+                R.drawable.img_batagor,
                 FoodTypes.Makanan,
                 "Baso dan Tahu Goreng dengan sajian bumbu kacang dan kecap khas Bandung",
                 25000
@@ -70,7 +70,7 @@ class FoodMenuViewBindingFragment : ViewBindingFragment<FragmentFoodMenuBinding>
             Food(
                 "F02",
                 "Cireng",
-                R.drawable.img_cappuccino,
+                R.drawable.img_cireng,
                 FoodTypes.Makanan,
                 "Makanan ringan berupa tepung kanji goreng dengan bahan dasar tempe fermentasi yang disebut oncom, disajikan dengan bumbu kacang pedas",
                 10000

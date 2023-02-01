@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
+        android:backgroundTint="@color/jasmine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,15 +42,15 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txt_field_date"
-        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space_mini_120"
+        android:layout_marginTop="24dp"
         android:cursorVisible="false"
         android:focusable="false"
         android:hint="@string/txt_field_date_hint"
         android:minHeight="@dimen/space_large_150"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
@@ -111,7 +112,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/space_normal_100"
-        android:backgroundTint="@color/carmine_pink"
+        android:backgroundTint="@color/coral_pink"
         android:hint="@string/btn_process_hint"
         android:textColorHint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"

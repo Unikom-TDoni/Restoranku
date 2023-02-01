@@ -1,12 +1,12 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.Restoranku" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/oasis</item>
+        <item name="colorPrimary">@color/jasmine</item>
         <item name="colorOnPrimary">@android:color/white</item>
 
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/carmine_pink</item>
+        <item name="colorSecondary">@color/coral_pink</item>
         <item name="colorOnSecondary">@android:color/white</item>
 
         <!-- Status bar color. -->
@@ -16,7 +16,7 @@
     </style>
 
     <style name="Theme.Restoranku.Starting" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/oasis</item>
+        <item name="windowSplashScreenBackground">@color/jasmine</item>
         <item name="postSplashScreenTheme">@style/Theme.Restoranku.NoActionBar</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
     </style>

@@ -1,8 +1,8 @@
 package edu.unikom.restoranku.core
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import edu.unikom.restoranku.R
 
@@ -29,5 +29,4 @@ class MainActivity : AppCompatActivity() {
 
     private fun initSplashScreen() =
         installSplashScreen().apply { setKeepOnScreenCondition { !isScreenReady } }
-
 }

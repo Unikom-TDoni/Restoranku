@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
+        android:backgroundTint="@color/jasmine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/round_navigate_before_24">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
