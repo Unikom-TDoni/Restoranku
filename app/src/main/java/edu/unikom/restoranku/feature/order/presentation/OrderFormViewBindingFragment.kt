@@ -12,7 +12,6 @@ import edu.unikom.restoranku.databinding.FragmentOrderFormBinding
 import edu.unikom.restoranku.module.DateUtility
 import edu.unikom.restoranku.module.ViewBindingFragment
 
-
 class OrderFormViewBindingFragment : ViewBindingFragment<FragmentOrderFormBinding>() {
     override val bindingInflater: (LayoutInflater) -> ViewBinding =
         FragmentOrderFormBinding::inflate

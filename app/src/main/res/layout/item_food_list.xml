@@ -79,6 +79,27 @@
             app:layout_constraintStart_toStartOf="@id/txt_view_name"
             app:layout_constraintTop_toBottomOf="@id/txt_view_name" />
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_menu_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_mini_120"
+            android:layout_marginTop="@dimen/space_mini_120"
+            app:cardBackgroundColor="@color/jasmine"
+            app:cardCornerRadius="@dimen/space_mini_40"
+            app:layout_constraintStart_toStartOf="@id/img_view_menu"
+            app:layout_constraintTop_toTopOf="@id/img_view_menu">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_view_menu_code"
+                style="@style/TextAppearance.Material3.LabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_mini_80"
+                android:textColor="@color/grey" />
+
+        </androidx.cardview.widget.CardView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

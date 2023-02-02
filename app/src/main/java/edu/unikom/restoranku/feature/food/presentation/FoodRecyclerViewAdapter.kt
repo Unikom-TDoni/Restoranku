@@ -34,6 +34,7 @@ class FoodRecyclerViewAdapter(
 
         binding.txtViewName.text = currentData.name
         binding.txtViewDesc.text = currentData.desc
+        binding.txtViewMenuCode.text = currentData.code
         Glide.with(binding.imgViewMenu).load(currentData.image).into(binding.imgViewMenu)
         binding.txtViewPrice.text = "Rp.${DecimalFormat("#,###.##").format(currentData.price)}"
         binding.txtViewCategory.text = currentData.category.toString()
